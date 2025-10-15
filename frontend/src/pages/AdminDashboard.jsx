@@ -132,7 +132,7 @@ export default function AdminDashboard({ user }) {
               <option value="user">User</option>
               <option value="admin">Admin</option>
             </select>
-            <button className="btn" type="submit">
+            <button className="btn cursor-pointer" type="submit">
               Create
             </button>
           </form>
@@ -201,7 +201,7 @@ export default function AdminDashboard({ user }) {
               onChange={handleFileChange}
               className="input"
             />
-            <button disabled={uploading} className="btn" type="submit">
+            <button disabled={uploading} className="btn cursor-pointer" type="submit">
               {uploading ? "Uploading..." : "Create Task"}
             </button>
           </form>
